@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartamento de Primeiro Andar | Josiane Alves Imóveis</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+   <a href="index.html" class="logo">
+    <img src="img/logo.png" alt="Josiane Alves Imóveis">
+</a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="imoveis.html">Imóveis</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <a href="https://wa.me/5537991196294?text=Olá,%20tenho%20interesse%20no%20Apartamento%20de%20Primeiro%20Andar."
+       target="_blank"
+       class="btn-header">
+        <i class="fa-brands fa-whatsapp"></i>
+        Fale conosco
+    </a>
+</header>
+
+<main class="pagina-detalhe">
+
+    <section class="detalhe-grid">
+
+        <div class="galeria-imovel">
+
+            <div class="foto-principal">
+                <img id="imagemPrincipal" src="img/ap1-1.webp" alt="Apartamento de Primeiro Andar">
+
+                <div class="botoes-midia">
+                    <button onclick="abrirViewer('fotos')">
+                        <i class="fa-solid fa-images"></i>
+                        Fotos (23)
+                    </button>
+
+                    <button onclick="abrirViewer('video')">
+                        <i class="fa-solid fa-video"></i>
+                        Vídeo (1)
+                    </button>
+
+                    <button onclick="abrirViewer('mapa')">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        Mapa
+                    </button>
+                </div>
+            </div>
+
+            <div class="miniaturas-detalhe">
+                <img src="img/ap1-2.webp" onclick="trocarImagem(this)" alt="Foto do imóvel">
+                <img src="img/ap1-3.webp" onclick="trocarImagem(this)" alt="Foto do imóvel">
+                <img src="img/ap1-4.webp" onclick="trocarImagem(this)" alt="Foto do imóvel">
+                <div class="miniatura-ver-mais" onclick="abrirViewer('fotos')">
+                    <img src="img/ap1-5.webp" alt="Mais fotos">
+                    <span>Ver mais</span>
+                </div>
+            </div>
+
+        </div>
+
+        <aside class="sidebar-contato">
+
+            <div class="box-financiavel">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <span>Financiável</span>
+            </div>
+
+            <div class="form-imovel">
+                <h3>Entrar em contato</h3>
+
+                <form action="https://formsubmit.co/seuemail@exemplo.com" method="POST">
+                    <input type="hidden" name="_subject" value="Interesse no Apartamento de Primeiro Andar">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <label>Nome*</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome" required>
+
+                    <label>Telefone*</label>
+                    <input type="tel" name="telefone" placeholder="(37) 99999-9999" required>
+
+                    <label>E-mail*</label>
+                    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+
+                    <label>Mensagem</label>
+                    <textarea name="mensagem">Olá, vi o anúncio do Apartamento de Primeiro Andar e gostaria de mais informações.</textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <p class="aviso-form">
+                    Ao prosseguir, você concorda com o envio dos dados para contato.
+                </p>
+            </div>
+
+            <div class="corretora-card">
+                <img src="img/josy1.jpg" alt="Corretora Josy">
+
+                <div>
+                    <span>Corretora responsável</span>
+                    <h4>Josiane Alves</h4>
+                    <a href="https://wa.me/5537991196294?text=Olá,%20Josy!%20Tenho%20interesse%20no%20Apartamento%20de%20Primeiro%20Andar."
+                       target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </aside>
+
+    </section>
+
+    <section class="conteudo-imovel">
+
+        <div class="titulo-imovel">
+            <div>
+                <h1>Apartamento de Primeiro Andar no Bairro Liberdade</h1>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Rua Exemplo, Bairro Liberdade - Divinópolis - MG
+                </p>
+            </div>
+
+            <div class="codigo-imovel">
+                Cód. 875416
+            </div>
+        </div>
+
+        <div class="precos-imovel">
+            <div>
+                <span>Comprar</span>
+                <h2>R$ 1.100.000</h2>
+            </div>
+
+            <div>
+                <span>Condomínio</span>
+                <p>R$ 400/mês</p>
+            </div>
+
+            <div>
+                <span>IPTU</span>
+                <p>R$ 1/mês</p>
+            </div>
+        </div>
+
+        <div class="resumo-imovel">
+            <div>
+                <i class="fa-solid fa-ruler-combined"></i>
+                <span>Área privativa</span>
+                <strong>201m²</strong>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-bed"></i>
+                <span>Quartos</span>
+                <strong>3</strong>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-bath"></i>
+                <span>Banheiros</span>
+                <strong>2</strong>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-car"></i>
+                <span>Vagas</span>
+                <strong>2</strong>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-couch"></i>
+                <span>Semi mobiliado</span>
+                <strong>Sim</strong>
+            </div>
+        </div>
+
+        <div class="descricao-imovel">
+            <h3>Descrição</h3>
+
+            <p>
+                Já pensou em morar em um apartamento com sensação real de casa?
+                Este imóvel oferece espaço, conforto e privacidade em uma localização
+                valorizada no bairro Liberdade, em Divinópolis.
+            </p>
+
+            <p>
+                Com ambientes amplos, acabamento moderno, varanda gourmet e excelente
+                distribuição interna, o apartamento é ideal para famílias que buscam
+                conforto, segurança e praticidade no dia a dia.
+            </p>
+        </div>
+
+        <div class="comodidades">
+            <h3>Comodidades do imóvel</h3>
+
+            <div class="lista-comodidades">
+                <span><i class="fa-solid fa-check"></i> Ar condicionado</span>
+                <span><i class="fa-solid fa-check"></i> Armário embutido</span>
+                <span><i class="fa-solid fa-check"></i> Cozinha americana</span>
+                <span><i class="fa-solid fa-check"></i> Área de serviço</span>
+                <span><i class="fa-solid fa-check"></i> Banheiro social</span>
+                <span><i class="fa-solid fa-check"></i> Cozinha gourmet</span>
+                <span><i class="fa-solid fa-check"></i> Churrasqueira</span>
+                <span><i class="fa-solid fa-check"></i> Interfone</span>
+                <span><i class="fa-solid fa-check"></i> Varanda gourmet</span>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<div class="viewer" id="viewer">
+
+    <div class="viewer-content">
+
+        <button class="fechar" onclick="fecharViewer()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="tabs">
+            <button class="tab ativo" onclick="mostrarAba(event, 'fotos')">
+                Fotos
+            </button>
+
+            <button class="tab" onclick="mostrarAba(event, 'video')">
+                Vídeo
+            </button>
+
+            <button class="tab" onclick="mostrarAba(event, 'mapa')">
+                Mapa
+            </button>
+        </div>
+
+        <div class="conteudo ativo" id="fotos">
+            <div class="grid-fotos" id="gridFotosAp1"></div>
+        </div>
+
+        <div class="conteudo" id="video">
+    <iframe
+        width="100%"
+        height="600"
+        src="https://www.youtube.com/embed/TqmPXQ8NMzM"
+        title="Vídeo do imóvel"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
+
+        <div class="conteudo" id="mapa">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746.2713882941302!2d-44.899248923880315!3d-20.12272244434062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa0af70061db995%3A0xeaec7520d0f8db4b!2sRua%20Ex-Combatente%20Jos%C3%A9%20Teodoro%20-%20Divin%C3%B3polis%2C%20MG%2C%2035502-636!5e0!3m2!1spt-BR!2sbr!4v1779671776906!5m2!1spt-BR!2sbr"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="mapa-viewer">
+    </iframe>
+</div>
+
+<a href="https://wa.me/5537991196294?text=Olá,%20Josy!%20Tenho%20interesse%20no%20Apartamento%20de%20Primeiro%20Andar."
+   target="_blank"
+   class="whatsapp-fixo">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="js/script.js"></script>
+<script>
+    carregarGaleria("ap1", 23, "gridFotosAp1");
+</script>
+
+</body>
+</html>

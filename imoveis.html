@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imóveis | Josiane Alves Imóveis</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+   <a href="index.html" class="logo">
+    <img src="img/logo.png" alt="Josiane Alves Imóveis">
+</a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="imoveis.html" class="ativo-link">Imóveis</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <a href="https://wa.me/5537991196294?text=Olá,%20gostaria%20de%20mais%20informações."
+       target="_blank"
+       class="btn-header">
+        <i class="fa-brands fa-whatsapp"></i>
+        Fale conosco
+    </a>
+</header>
+
+<section class="hero-interno">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-interno-content">
+        <span>Catálogo completo</span>
+        <h1>Encontre seu próximo imóvel</h1>
+        <p>Seleção de imóveis com atendimento personalizado e oportunidades exclusivas.</p>
+    </div>
+</section>
+
+<section class="catalogo-imoveis">
+
+    <div class="catalogo-topo">
+
+        <div>
+            <span class="resultado">2 imóveis disponíveis</span>
+            <h2>Imóveis</h2>
+        </div>
+
+        <div class="catalogo-acoes">
+
+    <select id="filtroTipo" class="filtro-select">
+        <option value="">Tipo do imóvel</option>
+        <option value="apartamento">Apartamento</option>
+        <option value="casa">Casa</option>
+    </select>
+
+    <select id="filtroQuartos" class="filtro-select">
+        <option value="">Quartos</option>
+        <option value="1">1 quarto</option>
+        <option value="2">2 quartos</option>
+        <option value="3">3 quartos</option>
+        <option value="4">4 quartos</option>
+    </select>
+
+    <input
+        type="text"
+        id="buscaImovel"
+        class="filtro-input"
+        placeholder="Buscar por bairro, cidade ou nome">
+
+    <button onclick="filtrarImoveis()" class="btn-filtro">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        Buscar
+    </button>
+
+</div>
+
+    </div>
+
+    <div class="grid-catalogo">
+
+        <!-- IMÓVEL 1 -->
+
+        <a href="imovel1.html" class="card-catalogo">
+
+            <div class="catalogo-img">
+                <img src="img/ap1-1.webp" alt="Apartamento">
+
+                <div class="catalogo-badge">
+                    Exclusivo
+                </div>
+            </div>
+
+            <div class="catalogo-body">
+
+                <p class="catalogo-tipo">
+                    Apartamento
+                </p>
+
+                <h3>
+                    Apartamento de Primeiro Andar
+                </h3>
+
+                <p class="catalogo-local">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Bairro Liberdade, Divinópolis - MG
+                </p>
+
+                <div class="catalogo-info">
+                    <span>201m²</span>
+                    <span>3 quartos</span>
+                    <span>2 banheiros</span>
+                    <span>2 vagas</span>
+                </div>
+
+                <p class="catalogo-finalidade">
+                    Comprar
+                </p>
+
+                <h4>
+                    R$ 1.100.000
+                </h4>
+
+                <div class="catalogo-footer">
+                    <span>Cód. 875416</span>
+
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+            </div>
+
+        </a>
+
+        <!-- IMÓVEL 2 -->
+
+        <a href="imovel2.html" class="card-catalogo">
+
+            <div class="catalogo-img">
+                <img src="img/ap2-1.webp" alt="Apartamento">
+
+                <div class="catalogo-badge novo">
+                    Novo
+                </div>
+            </div>
+
+            <div class="catalogo-body">
+
+                <p class="catalogo-tipo">
+                    Apartamento
+                </p>
+
+                <h3>
+                    Apartamento Moderno
+                </h3>
+
+                <p class="catalogo-local">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Centro, Divinópolis - MG
+                </p>
+
+                <div class="catalogo-info">
+                    <span>155m²</span>
+                    <span>3 quartos</span>
+                    <span>2 banheiros</span>
+                    <span>2 vagas</span>
+                </div>
+
+                <p class="catalogo-finalidade">
+                    Comprar
+                </p>
+
+                <h4>
+                    R$ 750.000
+                </h4>
+
+                <div class="catalogo-footer">
+                    <span>Cód. 874429</span>
+
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+<section class="cta-whatsapp">
+
+    <div>
+        <h2>Precisa de ajuda para escolher?</h2>
+        <p>Converse com a corretora e receba atendimento personalizado.</p>
+    </div>
+
+    <a href="https://wa.me/5537991196294?text=Olá,%20quero%20ajuda%20para%20escolher%20um%20imóvel."
+       target="_blank"
+       class="btn-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+        Falar agora
+    </a>
+
+</section>
+
+<footer class="footer">
+    <p>© 2026 Josiane Alves Imóveis - Todos os direitos reservados.</p>
+</footer>
+
+<a href="https://wa.me/5537991196294"
+   target="_blank"
+   class="whatsapp-fixo">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
